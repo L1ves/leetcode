@@ -7,3 +7,13 @@ for customer in range(len(accounts)):
         currentCustomerWealth += bank
         maxWealthSoFar.append(currentCustomerWealth)
 print(max(maxWealthSoFar))
+
+#class Solution:
+#    def maximumWealth(self, accounts: List[List[int]]) -> int:
+#        maxWealthSoFar = []
+#        for customer in range(len(accounts)):
+#            currentCustomerWealth = 0
+#            for bank in accounts[customer]:
+#                currentCustomerWealth += bank
+#                maxWealthSoFar.append(currentCustomerWealth)
+#        return max(maxWealthSoFar)
