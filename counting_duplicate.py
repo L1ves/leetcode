@@ -38,3 +38,7 @@ def duplicate_count(text):
                 new_counter += 1
                     # надо обнулить счетчик
     return new_counter
+
+#best Practice
+def duplicate_count(s):
+    return len([c for c in set(s.lower()) if s.lower().count(c) > 1])
