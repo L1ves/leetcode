@@ -5,3 +5,7 @@ def maskify(cc):
         i = '#'
         hash_list.append(i)
     return ''.join(hash_list) + cc[-4:]
+
+
+def maskify(cc):
+    return "#"*(len(cc)-4) + cc[-4:]
