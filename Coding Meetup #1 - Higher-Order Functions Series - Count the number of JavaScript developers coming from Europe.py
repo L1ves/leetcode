@@ -7,3 +7,4 @@ def count_developers(lst):
 
 def count_developers(lst):
     return sum(x["language"] == "JavaScript" and x["continent"] == "Europe" for x in lst)
+
