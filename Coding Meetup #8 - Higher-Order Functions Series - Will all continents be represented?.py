@@ -26,3 +26,4 @@ def all_continents(lst):
     return required_continent.issubset(developer_continent)
 def all_continents(lst):
     return len(set(x["continent"] for x in lst)) == 5
+    
