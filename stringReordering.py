@@ -7,3 +7,7 @@ def sentence(lst):
     new_list = sorted(kv_pairs)
     true_list = [str(v) for k,v in new_list]
     return ' '.join(true_list)
+
+
+def sentence(ds):
+    return ' '.join(v for _, v in sorted((int(k), v) for d in ds for k, v in d.items()))
