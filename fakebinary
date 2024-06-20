@@ -1,0 +1,3 @@
+SELECT x,
+       (CASE WHEN x < '5' THEN REPEAT('0', LENGTH(x)) ELSE REPEAT('1', LENGTH(x)) END) AS res
+FROM fakebin;
