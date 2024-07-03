@@ -14,6 +14,5 @@ class MusicAlbum:
     def play_random_track(self):
         return f' Now play track: {random.choice(self.tracklist)}'
         #return self.play_track(song)
-        
     
 
