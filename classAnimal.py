@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, days: int, name: str, health: int, size: str, color: str):
+    def __init__(self, name: str, days: int = None, health: int = None, size: str = None, color: str = None):
         self.days = days
         self.name = name
         self.health = health
@@ -25,7 +25,7 @@ class Horse(Animal):
         self.speed = speed
     def run(self) -> int:
         self.distance = self.speed * self.hour
-        return f"My horse {self.name} can walk {self.distance} in {self.hour}"
+        return f"My horse {self.name} can walk {self.distance}km in {self.hour} hour"
 class Chicken(Animal):
     def __init__(self, days: int, name: str, health: int, size: str, color: str, create_eags=5 ):
         super().__init__(days, name, health, size, color)
