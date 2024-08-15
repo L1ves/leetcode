@@ -19,3 +19,7 @@ def my_languages(results):
     more_than_60.sort(key=lambda x: x[1], reverse=True)
     sorted_language = [language for language, _  in more_than_60]
     return sorted_language
+
+
+def my_languages(results):
+    return sorted((l for l,r in results.items() if r>=60), reverse=True, key=results.get)
